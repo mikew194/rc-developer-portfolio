@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="flex items-center gap-2 mb-4">
               <Code size={24} className="text-primary-700 dark:text-primary-400" />
               <span className="text-xl font-display font-bold text-gray-900 dark:text-white">
-                RC.dev
+               M12 Systems R&D
               </span>
             </div>
             <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -71,7 +71,7 @@ const Footer = () => {
               <li className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-primary-700 dark:text-primary-400" />
                 <a href="mailto:contact@example.com" className="text-gray-600 dark:text-gray-300 hover:text-primary-700 dark:hover:text-primary-400 transition-colors">
-                  contact@example.com
+                  michael.wassermann@m12systems.com
                 </a>
               </li>
               <li>
@@ -108,7 +108,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-200 dark:border-gray-700 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-600 dark:text-gray-400 text-sm">
-            © {currentYear} RC.dev. All rights reserved.
+            © {currentYear} M12 Systems R&D. All rights reserved.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-700 dark:hover:text-primary-400 transition-colors">

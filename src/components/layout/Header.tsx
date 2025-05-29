@@ -58,7 +58,7 @@ const Header = () => {
             <Code size={32} className="text-primary-700 dark:text-primary-400" />
           </motion.div>
           <span className="text-xl font-display font-bold text-gray-900 dark:text-white">
-            RC.dev
+            M12 Systems R&D
           </span>
         </NavLink>
 

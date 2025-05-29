@@ -11,7 +11,7 @@ const sizeClasses = {
   lg: 'w-16 h-16',
 };
 
-const Spinner: React.FC<SpinnerProps> = ({ size = 'md', color = 'gray' }) => (
+const Spinner: React.FC<SpinnerProps> = ({ size = 'lg', color = 'gray' }) => (
   <div
     className={`animate-spin rounded-full border-4 border-t-transparent ${sizeClasses[size]}`}
     style={{ borderColor: color }}

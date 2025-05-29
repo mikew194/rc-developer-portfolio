@@ -24,10 +24,10 @@ const About = () => {
               My Story
             </h3>
             <p className="text-gray-700 dark:text-gray-300">
-              I'm a passionate full-stack developer with over 5 years of experience building web applications. My journey in tech began during college when I built my first website for a local business. That experience sparked my love for creating digital solutions that solve real-world problems.
+              I'm a passionate full-stack developer with over 20 years of experience building web applications. My journey in tech began during college when I built my first website for a local business. That experience sparked my love for creating digital solutions that solve real-world problems.
             </p>
             <p className="text-gray-700 dark:text-gray-300">
-              After graduating with a degree in Computer Science, I worked at several tech companies where I honed my skills in frontend and backend development. I've had the privilege of working on diverse projects ranging from e-commerce platforms to data visualization tools.
+              After graduating with a degree in Electrical Engineering, I worked at several tech companies where I honed my skills in frontend and backend development. I've had the privilege of working on diverse projects ranging from e-commerce platforms to data visualization tools.
             </p>
             <p className="text-gray-700 dark:text-gray-300">
               I'm deeply committed to continuous learning and staying on top of emerging technologies. When I'm not coding, you can find me hiking, reading tech blogs, or experimenting with new frameworks and libraries.

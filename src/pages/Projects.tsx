@@ -1,119 +1,157 @@
-import { useState } from 'react';
-import { Github, ExternalLink, Search } from 'lucide-react';
-import { motion } from 'framer-motion';
-import SectionHeading from '../components/ui/SectionHeading';
+import { useState } from "react";
+import { Github, ExternalLink, Search } from "lucide-react";
+import { motion } from "framer-motion";
+import SectionHeading from "../components/ui/SectionHeading";
 
 // Project data
 const projects = [
   {
-    id: 1,
-    title: 'E-Commerce Platform',
-    description: 'A full-featured online shopping platform with user authentication, product catalog, and payment processing.',
-    image: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    category: 'Full Stack',
-    github: '#',
-    live: '#',
-    featured: true
+    id: "1",
+    title: "Ferrell Colony Manager Platform",
+    description: "A full-featured online Ferrell Colony Manager App.",
+    image:
+      "https://i.etsystatic.com/16741186/r/il/93dea9/6370784152/il_600x600.6370784152_lhzx.jpg",
+    tags: ["Angular", "Node.js", "Express", "MongoDB"],
+    category: "Full Stack",
+    //demoUrl: 'https://mikew194.github.io/ferrell-colony-manager/',
+    //repoUrl: 'https://github.com/mikew194/ferrell-colony-manager',
+    // startDate: new Date('2023-01-10'),
+    // endDate: new Date('2023-05-20'),
+    github: "https://github.com/mikew194/ferrell-colony-manager",
+    live: "https://mikew194.github.io/ferrell-colony-manager/",
+    featured: true,
   },
+  // {
+  //   id: 1,
+  //   title: 'E-Commerce Platform',
+  //   description: 'A full-featured online shopping platform with user authentication, product catalog, and payment processing.',
+  //   image: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  //   tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+  //   category: 'Full Stack',
+  //   github: '#',
+  //   live: '#',
+  //   featured: true
+  // },
   {
-    id: 2,
-    title: 'Task Management App',
-    description: 'A productivity application that helps users organize tasks, set deadlines, and track progress on projects.',
-    image: 'https://images.pexels.com/photos/5717479/pexels-photo-5717479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    tags: ['React', 'Firebase', 'Tailwind CSS'],
-    category: 'Frontend',
-    github: '#',
-    live: '#',
-    featured: true
+    id: "2",
+    title: "Cat Management App",
+    description: "This app collects information on an individual cat.",
+    image:
+      "https://suchcats.com/wp-content/uploads/2025/04/ylcenyfr2143057470-768x929.jpg",
+    tags: ["React", "Firebase", "Material-UI"],
+    category: "Full Stack",
+    //demoUrl: 'https://mikew194.github.io/cat-manager/',
+    //repoUrl: 'https://github.com/mikew194/cat-manager',
+    //startDate: new Date('2022-08-15'),
+    //endDate: new Date('2022-11-30')
+    github: "https://github.com/mikew194/cat-manager",
+    live: "https://mikew194.github.io/cat-manager/",
+    featured: true,
   },
+  // {
+  //   id: 2,
+  //   title: 'Task Management App',
+  //   description: 'A productivity application that helps users organize tasks, set deadlines, and track progress on projects.',
+  //   image: 'https://images.pexels.com/photos/5717479/pexels-photo-5717479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  //   tags: ['React', 'Firebase', 'Tailwind CSS'],
+  //   category: 'Frontend',
+  //   github: '#',
+  //   live: '#',
+  //   featured: true
+  // },
   {
     id: 3,
-    title: 'Weather Dashboard',
-    description: 'Real-time weather information with interactive maps, forecasts, and historical data analysis.',
-    image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    tags: ['JavaScript', 'Chart.js', 'Weather API'],
-    category: 'Frontend',
-    github: '#',
-    live: '#',
-    featured: true
+    title: "A-Stain Flooring",
+    description:
+      "A-Stain Flooring, specializes in Staining Wood Floors or Concreate Drives and Patio Flooring.",
+    image: "./A House with Drive.png",
+    tags: ["React", "ghPages", "Javascript"],
+    category: "Full Stack",
+    github: "https://github.com/mikew194/a-stain-flooring",
+    live: "https://mikew194.github.io/a-stain-flooring/s",
+    featured: true,
   },
-  {
-    id: 4,
-    title: 'Blogging Platform',
-    description: 'A content management system for creating and publishing blog posts with user authentication and comments.',
-    image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    tags: ['Next.js', 'GraphQL', 'PostgreSQL'],
-    category: 'Full Stack',
-    github: '#',
-    live: '#',
-    featured: false
-  },
-  {
-    id: 5,
-    title: 'Recipe Finder App',
-    description: 'An application for discovering and saving recipes, with filtering options and nutritional information.',
-    image: 'https://images.pexels.com/photos/4051818/pexels-photo-4051818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    tags: ['React Native', 'Redux', 'Food API'],
-    category: 'Mobile',
-    github: '#',
-    live: '#',
-    featured: false
-  },
-  {
-    id: 6,
-    title: 'Finance Tracker',
-    description: 'Personal finance management tool for tracking expenses, income, and savings goals with data visualization.',
-    image: 'https://images.pexels.com/photos/6289027/pexels-photo-6289027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    tags: ['Vue.js', 'Express', 'D3.js'],
-    category: 'Full Stack',
-    github: '#',
-    live: '#',
-    featured: false
-  },
-  {
-    id: 7,
-    title: 'Social Media Dashboard',
-    description: 'Analytics dashboard for social media accounts, showing engagement metrics and audience demographics.',
-    image: 'https://images.pexels.com/photos/5957107/pexels-photo-5957107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    tags: ['React', 'TypeScript', 'REST API'],
-    category: 'Frontend',
-    github: '#',
-    live: '#',
-    featured: false
-  },
+  // {
+  //   id: 4,
+  //   title: 'Blogging Platform',
+  //   description: 'A content management system for creating and publishing blog posts with user authentication and comments.',
+  //   image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  //   tags: ['Next.js', 'GraphQL', 'PostgreSQL'],
+  //   category: 'Full Stack',
+  //   github: '#',
+  //   live: '#',
+  //   featured: false
+  // },
+  // {
+  //   id: 5,
+  //   title: 'Recipe Finder App',
+  //   description: 'An application for discovering and saving recipes, with filtering options and nutritional information.',
+  //   image: 'https://images.pexels.com/photos/4051818/pexels-photo-4051818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  //   tags: ['React Native', 'Redux', 'Food API'],
+  //   category: 'Mobile',
+  //   github: '#',
+  //   live: '#',
+  //   featured: false
+  // },
+  // {
+  //   id: 6,
+  //   title: 'Finance Tracker',
+  //   description: 'Personal finance management tool for tracking expenses, income, and savings goals with data visualization.',
+  //   image: 'https://images.pexels.com/photos/6289027/pexels-photo-6289027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  //   tags: ['Vue.js', 'Express', 'D3.js'],
+  //   category: 'Full Stack',
+  //   github: '#',
+  //   live: '#',
+  //   featured: false
+  // },
+  // {
+  //   id: 7,
+  //   title: 'Social Media Dashboard',
+  //   description: 'Analytics dashboard for social media accounts, showing engagement metrics and audience demographics.',
+  //   image: 'https://images.pexels.com/photos/5957107/pexels-photo-5957107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  //   tags: ['React', 'TypeScript', 'REST API'],
+  //   category: 'Frontend',
+  //   github: '#',
+  //   live: '#',
+  //   featured: false
+  // },
   {
     id: 8,
-    title: 'Fitness Tracker API',
-    description: 'Backend service for fitness applications, providing user data, workout plans, and progress tracking.',
-    image: 'https://images.pexels.com/photos/4498362/pexels-photo-4498362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    tags: ['Node.js', 'Express', 'MongoDB'],
-    category: 'Backend',
-    github: '#',
-    live: '#',
-    featured: false
-  }
+    title: "Fitness Tracker API",
+    description:
+      "Backend service for fitness applications, providing user data, workout plans, and progress tracking.",
+    image:
+      "https://images.pexels.com/photos/4498362/pexels-photo-4498362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    tags: ["Node.js", "Express", "MongoDB"],
+    category: "Backend",
+    github: "#",
+    live: "#",
+    featured: false,
+  },
 ];
 
 // Categories for filtering
-const categories = ['All', 'Frontend', 'Backend', 'Full Stack', 'Mobile'];
+const categories = ["All", "Frontend", "Backend", "Full Stack", "Mobile"];
 
 const Projects = () => {
-  const [activeCategory, setActiveCategory] = useState('All');
-  const [searchQuery, setSearchQuery] = useState('');
-  const [hoveredId, setHoveredId] = useState<number | null>(null);
-  
+  const [activeCategory, setActiveCategory] = useState("All");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [hoveredId, setHoveredId] = useState<string | null>(null); // <-- fix: was number | null, should be string | null
+
   // Filter projects based on category and search query
-  const filteredProjects = projects.filter(project => {
-    const matchesCategory = activeCategory === 'All' || project.category === activeCategory;
-    const matchesSearch = 
+  const filteredProjects = projects.filter((project) => {
+    const matchesCategory =
+      activeCategory === "All" || project.category === activeCategory;
+    const matchesSearch =
       project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       project.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      project.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
-    
+      project.tags.some((tag) =>
+        tag.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+
     return matchesCategory && matchesSearch;
   });
-  
+
   return (
     <div className="pt-24 pb-16">
       <div className="container">
@@ -121,7 +159,7 @@ const Projects = () => {
           title="My Projects"
           subtitle="A collection of my work showcasing my skills in web development, design, and problem-solving."
         />
-        
+
         {/* Search and Filter Controls */}
         <div className="mb-12 flex flex-col md:flex-row gap-6 items-center justify-between">
           <div className="relative w-full md:w-auto md:min-w-[300px]">
@@ -134,7 +172,7 @@ const Projects = () => {
               className="pl-10 pr-4 py-2 w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400"
             />
           </div>
-          
+
           <div className="flex flex-wrap gap-2 justify-center md:justify-end">
             {categories.map((category) => (
               <button
@@ -142,8 +180,8 @@ const Projects = () => {
                 onClick={() => setActiveCategory(category)}
                 className={`px-4 py-2 rounded-lg transition-colors ${
                   activeCategory === category
-                    ? 'bg-primary-600 text-white'
-                    : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
+                    ? "bg-primary-600 text-white"
+                    : "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
                 }`}
               >
                 {category}
@@ -151,7 +189,7 @@ const Projects = () => {
             ))}
           </div>
         </div>
-        
+
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.length > 0 ? (
@@ -162,16 +200,17 @@ const Projects = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="card overflow-hidden"
-                onMouseEnter={() => setHoveredId(project.id)}
+                onMouseEnter={() => setHoveredId(project.id.toString())}
                 onMouseLeave={() => setHoveredId(null)}
               >
                 <div className="relative overflow-hidden h-56">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 ease-in-out"
+                    className="w-full h-full object-cover transition-transform duration-500 ease-in-out border-2 border-black"
                     style={{
-                      transform: hoveredId === project.id ? 'scale(1.05)' : 'scale(1)'
+                      transform:
+                        hoveredId === project.id ? "scale(1.05)" : "scale(1)",
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent"></div>
@@ -188,7 +227,7 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white">
@@ -200,11 +239,11 @@ const Projects = () => {
                       </span>
                     )}
                   </div>
-                  
+
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
                     {project.description}
                   </p>
-                  
+
                   <div className="flex items-center justify-between">
                     <div className="flex space-x-3">
                       <a
@@ -236,7 +275,8 @@ const Projects = () => {
           ) : (
             <div className="col-span-full text-center py-12">
               <p className="text-lg text-gray-600 dark:text-gray-400">
-                No projects found matching your criteria. Try adjusting your search or filter.
+                No projects found matching your criteria. Try adjusting your
+                search or filter.
               </p>
             </div>
           )}

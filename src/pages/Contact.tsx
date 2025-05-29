@@ -103,13 +103,13 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
-                      Email
+                      Email:
                     </h4>
                     <a 
                       href="mailto:contact@example.com" 
                       className="text-gray-700 dark:text-gray-300 hover:text-primary-700 dark:hover:text-primary-400 transition-colors"
                     >
-                      contact@example.com
+                       michael.wassermann@m12systems.com
                     </a>
                   </div>
                 </div>
@@ -120,10 +120,10 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
-                      Location
+                      Location:
                     </h4>
                     <p className="text-gray-700 dark:text-gray-300">
-                      San Francisco, CA
+                      Conroe,TX 77302
                     </p>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ const Contact = () => {
                       href="tel:+11234567890" 
                       className="text-gray-700 dark:text-gray-300 hover:text-primary-700 dark:hover:text-primary-400 transition-colors"
                     >
-                      +1 (123) 456-7890
+                      +1 (504) 418-7834
                     </a>
                   </div>
                 </div>

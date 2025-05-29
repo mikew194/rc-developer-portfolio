@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Code2, ServerCog, Palette, Layers } from 'lucide-react';
+//import { Code2, ServerCog, Palette, Layers } from 'lucide-react';
+import { Code2, ServerCog, Palette } from 'lucide-react';
 import { motion } from 'framer-motion';
 import SectionHeading from '../ui/SectionHeading';
 import SkillBar from '../ui/SkillBar';
