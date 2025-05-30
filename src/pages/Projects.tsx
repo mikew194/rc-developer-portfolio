@@ -68,10 +68,10 @@ const projects = [
     tags: ["React", "ghPages", "Javascript"],
     category: "Full Stack",
     github: "https://github.com/mikew194/a-stain-flooring",
-    live: "https://mikew194.github.io/a-stain-flooring/s",
+    live: "https://mikew194.github.io/a-stain-flooring/",
     featured: true,
   },
-  // {
+  // { 
   //   id: 4,
   //   title: 'Blogging Platform',
   //   description: 'A content management system for creating and publishing blog posts with user authentication and comments.',

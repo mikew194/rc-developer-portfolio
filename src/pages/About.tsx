@@ -42,12 +42,12 @@ const About = () => {
             className="aspect-square max-w-md mx-auto lg:ml-auto rounded-2xl overflow-hidden shadow-xl"
           >
             <img 
-              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+              src="src/assets/images/my pic 1.jpg" 
               alt="Developer Portrait" 
               className="w-full h-full object-cover"
             />
           </motion.div>
-        </div>
+        </div>/
         
         {/* Values & Philosophy */}
         <div className="mb-20">
