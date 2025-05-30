@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Github, ExternalLink, Search } from "lucide-react";
 import { motion } from "framer-motion";
 import SectionHeading from "../components/ui/SectionHeading";
+import aStainFlooringImg from "../assets/images/A-Stain Flooring.png";
 
 // Project data
 const projects = [
@@ -64,24 +65,23 @@ const projects = [
     title: "A-Stain Flooring",
     description:
       "A-Stain Flooring, specializes in Staining Wood Floors or Concreate Drives and Patio Flooring.",
-    image: "src/assets/images/A-Stain Flooring.png",
+    image: aStainFlooringImg,
     tags: ["React", "ghPages", "Javascript"],
     category: "Full Stack",
     github: "https://github.com/mikew194/a-stain-flooring",
     live: "https://mikew194.github.io/a-stain-flooring/",
     featured: true,
   },
-  // { 
-  //   id: 4,
-  //   title: 'Blogging Platform',
-  //   description: 'A content management system for creating and publishing blog posts with user authentication and comments.',
-  //   image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //   tags: ['Next.js', 'GraphQL', 'PostgreSQL'],
-  //   category: 'Full Stack',
-  //   github: '#',
-  //   live: '#',
-  //   featured: false
-  // },
+  { 
+    id: 4,
+    title: 'Developer Portfolio',
+    description: 'My Portfolio which desplay someof my work.',
+    image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    tags: ['React', 'GH-Pages', 'TailWind'],
+    category: 'Full Stack',
+    
+    featured: false
+  },
   // {
   //   id: 5,
   //   title: 'Recipe Finder App',

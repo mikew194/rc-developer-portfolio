@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Check, Coffee, Code, MessageSquare, Users, Zap } from 'lucide-react';
 import SectionHeading from '../components/ui/SectionHeading';
+import myPic from '../assets/images/my pic 1.jpg';
 
 const About = () => {
   return (
@@ -42,7 +43,7 @@ const About = () => {
             className="aspect-square max-w-md mx-auto lg:ml-auto rounded-2xl overflow-hidden shadow-xl"
           >
             <img 
-              src="src/assets/images/my pic 1.jpg" 
+              src={myPic} 
               alt="Developer Portrait" 
               className="w-full h-full object-cover"
             />
