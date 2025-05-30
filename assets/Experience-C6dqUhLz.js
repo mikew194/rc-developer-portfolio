@@ -1,4 +1,4 @@
-import{c as a,r as m,j as e,m as y}from"./index-CpA3nWO-.js";import{S as x}from"./SectionHeading-DpnMCnhg.js";/**
+import{c as a,r as m,j as e,m as y}from"./index-BPXK4cE5.js";import{S as x}from"./SectionHeading-DlWJVCra.js";/**
  * @license lucide-react v0.344.0 - ISC
  *
  * This source code is licensed under the ISC license.
