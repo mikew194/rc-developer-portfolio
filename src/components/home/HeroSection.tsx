@@ -2,6 +2,7 @@ import { useState } from "react"; // Add this import
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import M12Logo from "../../assets/images/M12Systems-R&D-logo.png";
 
 const HeroSection = () => {
   const [showCard, setShowCard] = useState(true); // Add this state
@@ -161,7 +162,7 @@ const HeroSection = () => {
                       </button>
                       <div className="text-center w-full">
                         <img
-                          src="src/assets/images/M12Systems-R&D-logo.png"
+                          src={M12Logo}
                           alt="M12 Systems R&D React Development logo"
                           className="mx-auto mb-4 object-contain"
                         />
