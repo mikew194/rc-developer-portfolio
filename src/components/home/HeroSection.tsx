@@ -16,9 +16,9 @@ const HeroSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h1 className="text-lg md:text-xl font-medium text-primary-600 dark:text-green mb-6">
+            {/* <h1 className="text-lg md:text-xl font-medium text-primary-600 dark:text-green mb-6">
               Hello my name is Michael Wassermann, 
-            </h1>
+            </h1> */}
             <h4 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-500 dark:text-white leading-tight">
               {/* .NET Full Stack{" "} */}
               <span className="text-primary-500 dark:text-primary-500">
@@ -161,7 +161,7 @@ const HeroSection = () => {
                       </button>
                       <div className="text-center w-full">
                         <img
-                          src="M12Systems-R&D-logo.png"
+                          src="src/assets/images/M12Systems-R&D-logo.png"
                           alt="M12 Systems R&D React Development logo"
                           className="mx-auto mb-4 object-contain"
                         />

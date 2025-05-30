@@ -64,7 +64,7 @@ const projects = [
     title: "A-Stain Flooring",
     description:
       "A-Stain Flooring, specializes in Staining Wood Floors or Concreate Drives and Patio Flooring.",
-    image: "./A House with Drive.png",
+    image: "src/assets/images/A-Stain Flooring.png",
     tags: ["React", "ghPages", "Javascript"],
     category: "Full Stack",
     github: "https://github.com/mikew194/a-stain-flooring",
