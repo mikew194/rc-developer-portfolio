@@ -1,4 +1,4 @@
-import{r as d,j as e,L as i}from"./index-BhjQMwy9.js";import{c as l,m as s}from"./proxy-DlzXTH23.js";import{S as o}from"./SectionHeading-Cf0g1N2D.js";import{S as h}from"./SkillBar-B9fq9Xpv.js";import{G as p}from"./github-xF59Y6WS.js";import{M as g}from"./mail-Bp3npDUK.js";/**
+import{r as d,j as e,L as i}from"./index-BZl1Dbh5.js";import{c as l,m as s}from"./proxy-oQgdm5wB.js";import{S as o}from"./SectionHeading-CTtlqrCh.js";import{S as h}from"./SkillBar-Ct01HxMY.js";import{G as p}from"./github-DBlhCXVF.js";import{M as g}from"./mail-C1XETlZZ.js";/**
  * @license lucide-react v0.344.0 - ISC
  *
  * This source code is licensed under the ISC license.
