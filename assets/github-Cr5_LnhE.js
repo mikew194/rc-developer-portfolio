@@ -1,4 +1,4 @@
-import{c}from"./proxy-oQgdm5wB.js";/**
+import{c}from"./proxy-BAvyvZNR.js";/**
  * @license lucide-react v0.344.0 - ISC
  *
  * This source code is licensed under the ISC license.
