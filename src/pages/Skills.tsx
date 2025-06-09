@@ -11,14 +11,14 @@ const skillCategories = [
     icon: <Code className="w-6 h-6" />,
     color: 'primary',
     skills: [
-      { name: 'React', level: 90 },
+      { name: 'React', level: 80 },
       { name: 'TypeScript', level: 85 },
       { name: 'JavaScript', level: 95 },
       { name: 'HTML5 & CSS3', level: 90 },
-      { name: 'Tailwind CSS', level: 85 },
-      { name: 'Next.js', level: 80 },
-      { name: 'Redux', level: 75 },
-      { name: 'React Query', level: 80 }
+      { name: 'Tailwind CSS', level: 75 },
+      { name: 'Angular.js', level: 90 },
+      { name: 'Blazor', level: 75 },
+      { name: 'ASP.NET MVC', level: 80 }
     ]
   },
   {
@@ -30,10 +30,10 @@ const skillCategories = [
       { name: 'Node.js', level: 85 },
       { name: 'Express', level: 80 },
       { name: 'MongoDB', level: 75 },
-      { name: 'PostgreSQL', level: 70 },
-      { name: 'GraphQL', level: 65 },
+      { name: 'MSSQL', level: 80 },
+      { name: 'GraphQL', level: 55 },
       { name: 'RESTful APIs', level: 85 },
-      { name: 'Firebase', level: 70 }
+      { name: 'CosmosDB', level: 70 }
     ]
   },
   {
@@ -59,9 +59,9 @@ const skillCategories = [
       { name: 'Git & GitHub', level: 85 },
       { name: 'Docker', level: 70 },
       { name: 'CI/CD', level: 75 },
-      { name: 'AWS', level: 65 },
-      { name: 'Vercel', level: 80 },
-      { name: 'Netlify', level: 85 }
+      { name: 'Azure', level: 65 },
+      { name: 'DevOps', level: 80 },
+      { name: 'Other', level: 85 }
     ]
   },
   {
@@ -72,21 +72,21 @@ const skillCategories = [
     skills: [
       { name: 'Authentication', level: 80 },
       { name: 'Authorization', level: 75 },
-      { name: 'OWASP Security', level: 70 },
+      { name: 'OToken Based', level: 80 },
       { name: 'Data Protection', level: 75 }
     ]
   },
   {
     id: 'analytics',
-    title: 'Analytics & Testing',
+    title: 'AI',
     icon: <LineChart className="w-6 h-6" />,
     color: 'accent',
     skills: [
-      { name: 'Jest', level: 75 },
-      { name: 'React Testing Library', level: 70 },
-      { name: 'Cypress', level: 65 },
-      { name: 'Google Analytics', level: 80 },
-      { name: 'Performance Optimization', level: 75 }
+      { name: 'Copilot', level: 75 },
+      { name: 'RBlackbox', level: 70 },
+      { name: 'Gemini', level: 75 },
+      { name: 'SQL AI', level: 80 },
+      { name: 'Testing AI', level: 75 }
     ]
   }
 ];

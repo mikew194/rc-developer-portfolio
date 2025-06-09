@@ -66,12 +66,12 @@ const projects = [
     description:
       "A-Stain Flooring, specializes in Staining Wood Floors or Concreate Drives and Patio Flooring.",
     image: aStainFlooringImg,
-    tags: ["React", "ghPages", "Javascript"],
+    tags: ["Angular 19", "ghPages", "Javascript","Material"],
     category: "Full Stack",
-    github: "https://github.com/mikew194/a-stain-flooring",
-    live: "https://mikew194.github.io/a-stain-flooring/",
+    github: "https://github.com/mikew194/CustomerOrderApp",
+    live: "https://mikew194.github.io/CustomerOrderApp/",
     featured: true,
-  },
+  }, 
   { 
     id: 4,
     title: 'Developer Portfolio',
@@ -104,17 +104,17 @@ const projects = [
   //   live: '#',
   //   featured: false
   // },
-  // {
-  //   id: 7,
-  //   title: 'Social Media Dashboard',
-  //   description: 'Analytics dashboard for social media accounts, showing engagement metrics and audience demographics.',
-  //   image: 'https://images.pexels.com/photos/5957107/pexels-photo-5957107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //   tags: ['React', 'TypeScript', 'REST API'],
-  //   category: 'Frontend',
-  //   github: '#',
-  //   live: '#',
-  //   featured: false
-  // },
+  {
+    id: 7,
+    title: 'Blazor with Fluent.UI',
+    description: 'Ealuating Microsoft Fluent.UI tools for Blazor',
+    image: 'https://images.pexels.com/photos/5957107/pexels-photo-5957107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    tags: ['Blazor', 'C#', 'Fluent-UI'],
+    category: 'Frontend',
+    github: '#',
+    live: '#',
+    featured: false
+  },
   {
     id: 8,
     title: "Fitness Tracker API",

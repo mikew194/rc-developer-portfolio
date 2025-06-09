@@ -7,34 +7,40 @@ import SectionHeading from '../components/ui/SectionHeading';
 const experiences = [
   {
     id: 1,
-    title: 'Senior Frontend Developer',
-    company: 'Tech Innovations Inc.',
-    location: 'San Francisco, CA',
-    period: 'Jan 2022 - Present',
+    title: 'Sr .NET Full Stack/AI Developer', 
+    company: 'M12 Systems R&D.',
+    location: 'Conroe TX',
+    period: 'May 2023 - Present',
     description: 'Leading the frontend development team in creating responsive and accessible user interfaces for enterprise applications.',
     responsibilities: [
-      'Architected and implemented new features using React, TypeScript, and GraphQL',
-      'Mentored junior developers and conducted code reviews',
+      'Researching AI Assisted Development',
+      'Architected and implemented new features using Angular, React, TypeScript, Javascript and GraphQL',
+      'Architected and implemented new database features using MongoDB CosmosDB MSSQL',
+      'Developing Techniques too Mentor junior developers and conducted code reviews',
       'Collaborated with UX designers to create intuitive user experiences',
-      'Implemented CI/CD pipelines and testing strategies'
+      'Researching CI/CD pipelines and testing strategies',
+      'Currently Learning Python'
     ],
-    technologies: ['React', 'TypeScript', 'GraphQL', 'Jest', 'Tailwind CSS'],
+    technologies: ['React', 'TypeScript', 'CoPilot', 'Gemini', 'Tailwind'],
     type: 'work'
   },
   {
     id: 2,
     title: 'Full Stack Developer',
-    company: 'Digital Solutions Co.',
-    location: 'Seattle, WA',
-    period: 'Mar 2019 - Dec 2021',
-    description: 'Developed full-stack web applications for clients across various industries, from concept to deployment.',
+    company: 'Hexaware Technologies.',
+    location: 'S1105 Lakewood Pkwy, Alpharetta, GA 30009',
+    period: 'July 2022 - May 2023',
+    description: 'Developed full-stack web applications for Ernst&Young, from concept to deployment.',
     responsibilities: [
-      'Built RESTful APIs using Node.js and Express',
-      'Developed frontend interfaces with React and Redux',
-      'Designed and maintained MongoDB and PostgreSQL databases',
+      'Developmment and support of Corporte App Reporting Hub',
+      'Built RESTful APIs using WEBAPI and EntityFramework',
+      'Developed frontend interfaces with Angular and Asp.NET',
+      'Designed and maintained MongoDB and MSSQL databases',
+      'Training on new skills: React Blazor and AI Asysted Development',
+      'Collaborated with UX designers to create intuitive user experiences',
       'Implemented authentication and authorization systems'
     ],
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'PostgreSQL'],
+    technologies: ['Angular', 'ASP.NET', 'EntityFramework', 'MongoDB', 'MSSQL'],
     type: 'work'
   },
   {
@@ -53,36 +59,36 @@ const experiences = [
     technologies: ['JavaScript', 'HTML5', 'CSS3', 'jQuery', 'Bootstrap'],
     type: 'work'
   },
-  {
-    id: 4,
-    title: 'Master of Science in Computer Science',
-    company: 'Stanford University',
-    location: 'Stanford, CA',
-    period: '2015 - 2017',
-    description: 'Focused on web technologies, algorithms, and human-computer interaction.',
-    responsibilities: [
-      'Thesis: "Optimizing User Interfaces for Improved Accessibility"',
-      'Research assistant in the Human-Computer Interaction Lab',
-      'Teaching assistant for Web Development and Algorithms courses'
-    ],
-    technologies: [],
-    type: 'education'
-  },
-  {
-    id: 5,
-    title: 'Bachelor of Science in Software Engineering',
-    company: 'University of Washington',
-    location: 'Seattle, WA',
-    period: '2011 - 2015',
-    description: 'Comprehensive education in software development methodologies, programming languages, and system design.',
-    responsibilities: [
-      'Graduated with honors (3.8 GPA)',
-      'President of the Web Development Club',
-      'Completed internship at Microsoft'
-    ],
-    technologies: [],
-    type: 'education'
-  },
+  // {
+  //   id: 4,
+  //   title: 'Master of Science in Computer Science',
+  //   company: 'Stanford University',
+  //   location: 'Stanford, CA',
+  //   period: '2015 - 2017',
+  //   description: 'Focused on web technologies, algorithms, and human-computer interaction.',
+  //   responsibilities: [
+  //     'Thesis: "Optimizing User Interfaces for Improved Accessibility"',
+  //     'Research assistant in the Human-Computer Interaction Lab',
+  //     'Teaching assistant for Web Development and Algorithms courses'
+  //   ],
+  //   technologies: [],
+  //   type: 'education'
+  // },
+  // {
+  //   id: 5,
+  //   title: 'Bachelor of Science in Software Engineering',
+  //   company: 'University of Washington',
+  //   location: 'Seattle, WA',
+  //   period: '2011 - 2015',
+  //   description: 'Comprehensive education in software development methodologies, programming languages, and system design.',
+  //   responsibilities: [
+  //     'Graduated with honors (3.8 GPA)',
+  //     'President of the Web Development Club',
+  //     'Completed internship at Microsoft'
+  //   ],
+  //   technologies: [],
+  //   type: 'education'
+  // },
   {
     id: 6,
     title: 'Best Frontend Solution',
